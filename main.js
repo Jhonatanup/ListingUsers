@@ -1,21 +1,9 @@
-const arr = [1,3,5,7,9];
+function soma(a = 3, b = 8){
+    return a + b;
+}
+console.log(soma(1));
+console.log(soma(1,3));
 
-const newArr = arr.map(item => {
-    return item*2;
-});
-
-console.log(newArr);
-
-const newArr2 = arr.map((item) => {
-    return item*2;
-});
-console.log(newArr2);
-
-const newArr3 = arr.map((item) => item*2);
-console.log(newArr3);
-
-const teste = () => 'teste';
-console.log(teste());
-
-const teste2 = () => ({nome: 'Jhonatan'});
-console.log(teste2());
+const sum = (a = 3, b = 3) => a + b;
+console.log(sum(1));
+console.log(sum(1,3));

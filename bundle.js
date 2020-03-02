@@ -1,29 +1,19 @@
 "use strict";
 
-var arr = [1, 3, 5, 7, 9];
-var newArr = arr.map(function (item) {
-  return item * 2;
-});
-console.log(newArr);
-var newArr2 = arr.map(function (item) {
-  return item * 2;
-});
-console.log(newArr2);
-var newArr3 = arr.map(function (item) {
-  return item * 2;
-});
-console.log(newArr3);
+function soma() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 8;
+  return a + b;
+}
 
-var teste = function teste() {
-  return 'teste';
+console.log(soma(1));
+console.log(soma(1, 3));
+
+var sum = function sum() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3;
+  return a + b;
 };
 
-console.log(teste());
-
-var teste2 = function teste2() {
-  return {
-    nome: 'Jhonatan'
-  };
-};
-
-console.log(teste2());
+console.log(sum(1));
+console.log(sum(1, 3));

@@ -7,3 +7,5 @@
 * Classes
 * Const & Let
 * Operações em Arrays
+* Arrow Function
+* Valores padroes
