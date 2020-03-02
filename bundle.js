@@ -5,15 +5,25 @@ var newArr = arr.map(function (item) {
   return item * 2;
 });
 console.log(newArr);
-var sum = arr.reduce(function (total, next) {
-  return total + next;
+var newArr2 = arr.map(function (item) {
+  return item * 2;
 });
-console.log(sum);
-var filter = arr.filter(function (item) {
-  return item % 2 === 1;
+console.log(newArr2);
+var newArr3 = arr.map(function (item) {
+  return item * 2;
 });
-console.log(filter);
-var find = arr.find(function (item) {
-  return item === 4;
-});
-console.log(find);
+console.log(newArr3);
+
+var teste = function teste() {
+  return 'teste';
+};
+
+console.log(teste());
+
+var teste2 = function teste2() {
+  return {
+    nome: 'Jhonatan'
+  };
+};
+
+console.log(teste2());

@@ -1,24 +1,21 @@
 const arr = [1,3,5,7,9];
 
-const newArr = arr.map(function(item){
+const newArr = arr.map(item => {
     return item*2;
 });
 
 console.log(newArr);
 
-const sum = arr.reduce(function(total, next){
-   return total+next; 
+const newArr2 = arr.map((item) => {
+    return item*2;
 });
-console.log(sum);
+console.log(newArr2);
 
-const filter = arr.filter(function(item){
-    return item % 2 === 1;
-});
+const newArr3 = arr.map((item) => item*2);
+console.log(newArr3);
 
-console.log(filter);
+const teste = () => 'teste';
+console.log(teste());
 
-const find = arr.find(function(item){
-    return item === 4;
-})
-
-console.log(find);
+const teste2 = () => ({nome: 'Jhonatan'});
+console.log(teste2());
