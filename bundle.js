@@ -1,19 +1,22 @@
 "use strict";
 
-function soma() {
-  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
-  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 8;
-  return a + b;
+var usuario = {
+  nome: 'Jhonatan',
+  idade: 23,
+  endereco: {
+    cidade: 'Dourados',
+    estado: 'MS'
+  }
+};
+var nome = usuario.nome,
+    idade = usuario.idade,
+    cidade = usuario.endereco.cidade;
+console.log(nome);
+console.log(cidade);
+
+function mostraCidade(_ref) {
+  var endereco = _ref.endereco;
+  console.log(endereco.cidade);
 }
 
-console.log(soma(1));
-console.log(soma(1, 3));
-
-var sum = function sum() {
-  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
-  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3;
-  return a + b;
-};
-
-console.log(sum(1));
-console.log(sum(1, 3));
+mostraCidade(usuario);

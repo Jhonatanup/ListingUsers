@@ -1,9 +1,17 @@
-function soma(a = 3, b = 8){
-    return a + b;
-}
-console.log(soma(1));
-console.log(soma(1,3));
+const usuario = {
+    nome: 'Jhonatan',
+    idade: 23,
+    endereco: {
+        cidade: 'Dourados',
+        estado: 'MS',
+    },
+};
 
-const sum = (a = 3, b = 3) => a + b;
-console.log(sum(1));
-console.log(sum(1,3));
+const { nome, idade , endereco:{cidade}} = usuario;
+console.log(nome);
+console.log(cidade);
+
+function mostraCidade({endereco}){
+    console.log(endereco.cidade);
+}
+mostraCidade(usuario);
