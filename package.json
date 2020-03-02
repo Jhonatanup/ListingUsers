@@ -1,0 +1,15 @@
+{
+  "name": "cursoES6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "jhonatanup",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6"
+  },
+  "scripts": {
+    "dev": "babel main.js -o bundle.js -w"
+  }
+}
