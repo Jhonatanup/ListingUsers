@@ -12,4 +12,5 @@
 * Desestruturação
 * Rest/spread
 * Template Literals
+* Object Short Syntax
 
