@@ -14,3 +14,6 @@
 * Template Literals
 * Object Short Syntax
 
+### Webpack Server
+* Configurando o webpack
+
