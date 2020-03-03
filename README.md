@@ -11,4 +11,5 @@
 * Valores padroes
 * Desestruturação
 * Rest/spread
+* Template Literals
 
