@@ -9,3 +9,6 @@
 * Operações em Arrays
 * Arrow Function
 * Valores padroes
+* Desestruturação
+* Rest/spread
+
