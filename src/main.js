@@ -19,6 +19,8 @@ class App {
         if(userInput.length === 0)
             return;
 
+        this.setLoading();    
+        try {
         const response = await api.get(`/users/${userInput}`)
         console.log(response.data)
         let { name, bio, avatar_url, html_url } = response.data;
@@ -36,7 +38,22 @@ class App {
         console.log(this.users);
         this.inputEl.value = '';
         this.render();
+        } catch(err){
+            alert('O usuario não foi encontrado!');
+        }
+        this.setLoading(false);
     }
+    setLoading(loading = true){
+        if(loading === true){
+            let loadingEl = document.createElement('span');
+            loadingEl.setAttribute('id', 'load')
+            loadingEl.appendChild(document.createTextNode('Carregando...'));
+            this.formEl.appendChild(loadingEl);
+        }else{
+            document.getElementById('load').remove();
+        }
+    }
+
     render(){
         this.listEL.innerHTML = '';
         this.users.forEach( user => {
