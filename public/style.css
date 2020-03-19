@@ -12,6 +12,7 @@ header {
     color: whitesmoke;
     font-weight: 600;
     font-family: sans-serif;
+    font-size: 1.25em;
 }
 .container{
     margin: 0 auto;
@@ -48,6 +49,7 @@ p{
 }
 #descricao{
     margin-left: -8%;
+    margin-top: 20px;
     padding: 1em;
     font-size: 1em;
     text-align: justify;
@@ -57,7 +59,9 @@ p{
     border-radius: 10px;
 }
 #load{
+    text-align: center;
     margin: 2em;
+    margin-left: -2%;
     font-size: 1.5em;
     color:#497AB3;
 }
@@ -77,6 +81,7 @@ input {
     padding: 10px;
     margin-left: -5%;
     margin-right: auto;
+    margin-bottom: 10px;
 }
 button {
     display:none;   
@@ -91,7 +96,7 @@ button {
     padding: 15px;
     
     color: #313131;
-    font-size: 0.7em;
+    font-size: 1em;
     appearance: none;
     border:none;
     outline: none;
