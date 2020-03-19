@@ -41,7 +41,10 @@ class App {
         this.inputEl.value = '';
         this.render();
         } catch(err){
+            if(document.getElementById('descricao') !== null)
+            document.getElementById('descricao').remove(); 
             alert('O usuario não foi encontrado!');
+            console.log(err);
         }
         this.setLoading(false);
     }
