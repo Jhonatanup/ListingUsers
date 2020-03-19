@@ -7,12 +7,20 @@
     <title>Listagem de usuarios</title>
 </head>
 <body>
+    <header>Listador de users</header>
+        
+    
     <div class="container">
-        <form id="user-form">
-            <input placeholder="digite o user que deseja adicionar na lista..."type="text" class="text" name="user">
-            <button type="submit">Adicionar</button>
-        </form>
+        <div class="search-box">
+            <form id="user-form">
+                <input placeholder="Digite o user que deseja listar..."type="text" class="search-bar" name="user">
+                <button type="submit"></button>
+                <p id="descricao">Para utilizar essa aplicação basta realizar uma busca na barra de pesquisa utilizando o id do usuário do github. Por exemplo 'jhonatanup', mas sem as aspas é claro hahahaha</p>
+            </form>
+        </div>
+        
         <ul id="user-list"></ul>
+        
     </div>
     <script src="bundle.js"></script>
 </body>

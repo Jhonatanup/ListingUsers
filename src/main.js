@@ -19,13 +19,15 @@ class App {
         if(userInput.length === 0)
             return;
 
-        this.setLoading();    
+        this.setLoading();   
+        if(document.getElementById('descricao') !== null)
+            document.getElementById('descricao').remove(); 
         try {
         const response = await api.get(`/users/${userInput}`)
         console.log(response.data)
         let { name, bio, avatar_url, html_url } = response.data;
         if(bio === null){
-            bio = 'usuario não possui descrição';
+            bio = 'O usuário não possui uma descrição';
             console.log(bio);
         }
             
@@ -66,7 +68,10 @@ class App {
             let linkEl = document.createElement('a');
             linkEl.setAttribute('target', '_blank');
             linkEl.setAttribute('href', user.html_url);
-            linkEl.appendChild(document.createTextNode('Acessar'));
+            let n = user.name;
+            let words = n.split(' ');
+            let userName = words[0];
+            linkEl.appendChild(document.createTextNode('Visitar GitHub de '+ userName));
             let itemEl = document.createElement('li');
             itemEl.appendChild(imgEl);
             itemEl.appendChild(titleEl);
